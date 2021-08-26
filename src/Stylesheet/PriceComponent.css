@@ -5,11 +5,14 @@
 }
 
 .priceMain_first {
-  width: 100%;
+  /* width: 100%; */
   background-color: lightgray;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+}
+.priceMain_first > * {
+  flex: 1 1 10em;
 }
 
 .queries {
@@ -20,7 +23,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 
 .heading {
@@ -73,12 +76,18 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   width: 50%;
+}
+.secondPriceHeading {
+  font-size: 24px;
+}
+.goldRatesecondHeading {
+  font-size: 30px;
 }
 .headingdisplayeroutput {
   /* width: 100%; */
-  border: 1px solid chartreuse;
+  border: 1px solid rgb(18, 29, 7);
 }
 .resultOutput {
   /* border: 1px solid red; */
@@ -93,30 +102,65 @@
   text-align: center;
   display: grid;
   place-items: center;
-  height: 160px;
-  width: 38%;
+  height: 100%;
+  line-height: 3;
+  width: 40%;
   font-size: 50px;
   border-radius: 100px;
   background-color: white;
   -webkit-box-shadow: 1px 6px 18px 5px rgba(0, 0, 0, 0.61);
   box-shadow: 1px 6px 18px 5px rgba(95, 93, 67, 0.61);
 }
-/*
-.output {
-  border-radius: 30px solid black;
-  width: 60%;
-  font-size: x-large;
-  height: 65%;
-  background-color: lightgray;
-  display: grid;
-  place-items: center;
-} */
 
-@media screen and (max-width: 998px) {
-  body {
-    /* background-color: lightgray; */
+/* ====================================================
+          @media query for responsiveness
+==================================================== */
+
+@media screen and (max-width: 1250px) {
+  .exactResult {
+    /* height: 170px; */
+    width: 55%;
   }
-  .priceMain_first {
-    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1030px) {
+  .exactResult {
+    /* height: 175px; */
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 972px) {
+  .exactResult {
+    /* height: 100%; */
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .exactResult {
+    height: 100%;
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .exactResult {
+    height: 100%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .exactResult {
+    height: 100%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .exactResult {
+    height: 95%;
+    width: 100%;
   }
 }

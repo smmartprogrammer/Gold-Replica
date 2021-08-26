@@ -24,7 +24,13 @@
   padding-top: 50px;
   margin-left: 18%;
   margin-right: 18%;
-  justify-content: space-between;
+  border: 1px solid black;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.goldRate {
+  flex: 1;
+  border: 1px solid black;
 }
 .goldRate > h3 {
   font-weight: 450;
@@ -33,38 +39,58 @@
   font-size: 14px;
   margin-bottom: 5px;
 }
+.invitation {
+  flex: 2;
+  border: 1px solid black;
+  padding: 8px;
+  
+}
 .invitation > h3 {
   font-weight: 450;
 }
 .registration {
-  width: 400px;
-  height: 38px;
+  width: 100%;
+  background-color: lightgray;
+  border: none;
+}
+.fieldsSections {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inputField {
+  margin-top: 5px;
+  flex: 70%;
+  height: 35px;
+  display: flex;
   border: 1px solid black;
-  border-radius: 3px;
-  background-color: #f0f0f0;
-  padding: 5px;
-  font-size: 15px;
-  margin-top: 30px;
+}
+.inputSecondField {
+  flex: 25%;
+  border: 1px solid black;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
 }
 ::placeholder {
   margin-right: 5px;
 }
 
 .registrationButton {
-  width: 100px;
-  margin-bottom: 5px;
+  border: none;
+  outline: none;
   cursor: pointer;
-  padding: 5px;
-  height: 48px;
-  border: 2px solid black;
-  font-size: 10px;
-  color: #fff;
   background-color: black;
+  color: white;
 }
 .registrationButton > p {
   font-size: 13px;
 }
-
+.traditionyears {
+  flex: 1;
+  border: 1px solid black;
+}
 .traditionyears > h3 {
   font-weight: 450;
 }
